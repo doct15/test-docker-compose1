@@ -26,3 +26,5 @@ bmcgeheedd/test-docker-compose1:
   PostStart:
     - publicip=$(curl -s ident.me) || true
     - 'echo "You can validate the install by pointing your browser at http://$publicip:$PORT"'
+  Terminate:
+    - sudo /usr/local/bin/docker-compose down
