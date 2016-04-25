@@ -10,7 +10,7 @@ bmcgeheedd/test-docker-compose1:
 
   Env:
     # Set Env variables here
-    - PORT: "8080"
+    - PORT: "8001"
   PreInstall:
     - echo "DD_USERNAME- $DISTELLI_DOCKER_USERNAME"
     - echo "DD_EMAIL-    $DISTELLI_DOCKER_EMAIL"
